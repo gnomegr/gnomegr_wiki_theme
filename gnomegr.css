@@ -1,0 +1,391 @@
+@import url("css/reset.css");
+@import url("css/text.css");
+@import url("css/960.css");
+
+
+/* Base information */
+/* ========================================================================== */
+
+html {
+    background: white url("./images/html-bg.png") top center repeat-x;
+}
+
+body {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #2e3436;
+}
+a {
+    color: #204a87;
+}
+a:hover {
+    color: #3465a4;
+}
+a:visited {
+   color: #5d396e;
+}
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+.hidden {
+    display: none;
+}
+
+blockquote {
+	margin:22px 40px; 
+	padding:3px; 
+	color:#585858; 
+	padding: 0 50px; 
+	background: transparent; 
+	border-left: 3px solid #ccc;
+}
+
+/* Global Domain Bar */
+/* ========================================================================== */
+
+
+
+#global_domain_bar {
+    background: #fff;
+    height: 10px;
+    box-shadow: 0 4px 2px -2px #8fb3d9;
+}
+#global_domain_bar div {
+    max-width: 940px;
+    margin: 0 auto;
+}
+#global_domain_bar a {
+    margin-right: 10px;
+    float: right;
+    background: #fff url(./images/favicon.png) 8px 6px no-repeat;
+    padding: 2px 8px 2px 26px;
+    color: #555753;
+    text-decoration: none;
+    font-size: 13px;
+    -moz-border-radius: 5px #8fb3d9;
+    -webkit-border-radius: 5px #8fb3d9;
+    box-shadow: 0 4px 2px -2px #8fb3d9;
+    border-radius: 5px;
+}
+
+/* Header */
+/* ========================================================================== */
+
+
+
+#header {
+    margin: 20px auto 0;
+}
+#header img {
+    vertical-align: middle;
+    float: left;
+    margin-right: 10px;
+}
+#header #logo {
+   float: left;
+}
+#header #logo h1 {
+    margin: 0;
+}
+#header #logo img {
+   -webkit-transition: opacity 200ms ease-out;
+   -moz-transition: opacity 200ms ease-out;
+   transition: opacity 200ms ease-out;
+   opacity: 1;
+   margin-left: -3px;
+   height: 76px;
+   width: 199px;
+}
+#header #logo img:hover {
+   opacity: 0.85;
+}
+
+
+
+/* Top bar */
+/* ========================================================================== */
+
+
+
+#top_bar {
+    background: #2e3436 url("./images/top_bar-bg.png") top repeat-x;
+    padding: 8px 0;
+    margin-top: 23px;
+    font-size: 13px;
+    line-height: normal;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    -moz-box-shadow: 0 1px 8px #b9bec4;
+    -webkit-box-shadow: 0 1px 8px #b9bec4;
+    box-shadow: 0 1px 8px #b9bec4;
+}
+#top_bar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0 5px;
+}
+#top_bar ul li {
+    display: inline;
+    margin: 0 5px 0 0;
+}
+#top_bar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 4px 7px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    outline: 0;
+    -webkit-transition: background 100ms linear;
+    -moz-transition: background 100ms linear;
+    transition: background 100ms linear;
+    text-shadow: 0 1px 0 #000;
+}
+#top_bar a:hover {
+    background: #64696d;
+    background: rgba(100%, 100%, 100%, 0.2);
+}
+#top_bar a:focus {
+    background: rgba(100%, 100%, 100%, 0.15);
+}
+#top_bar a:active, #top_bar li.current-menu-item a, #top_bar li.current-page-ancestor a {
+    background: #1c2021 url("./images/top_bar-item-bg.png") top repeat-x;
+    -moz-box-shadow: inset 0 -1px 0 rgba(100%,100%,100%, 0.4), inset 0 1px 3px rgba(0,0,0,0.4);
+    -webkit-box-shadow: inset 0 -1px 0 rgba(100%,100%,100%, 0.4), inset 0 1px 3px rgba(0,0,0,0.4);
+    box-shadow: inset 0 -1px 0 rgba(100%,100%,100%, 0.4), inset 0 1px 3px rgba(0,0,0,0.4);
+}
+#top_bar li.selected a {
+    font-weight: bold;
+}
+#top_bar li a span.home {
+    background: url("./images/top_bar-item-home.png") no-repeat;
+    padding-left: 18px;
+}
+#top_bar #main_search {
+    text-align: right;
+}
+#top_bar input {
+    margin: -8px 0 -8px -25px;
+    line-height: 22px;
+    width: 79px;
+    border: 0;
+    font: inherit;
+    color: inherit;
+    padding: 8px 8px 8px 28px;
+    background: transparent url(./images/search-icon.png) 8px center no-repeat;
+    color: #fff;
+    border-left: 1px solid rgba(100%,100%,100%,0.3);
+    outline: none;
+}
+#top_bar input.placeholder {
+    color: #CCC;
+}
+#top_bar input:focus {
+    background-color: rgba(100%,100%,100%,0.1);
+    -moz-border-radius-topright: 5px;
+    -moz-border-radius-bottomright: 5px;
+    -webkit-border-top-right-radius: 6px;
+    -webkit-border-bottom-right-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+#top_bar input[type=submit]{
+    border-width: 0;
+    width: 16px;
+    height: 14px;
+        font-size: 0px;
+        line-height: 0px;
+    text-indent: -99999px;
+    margin-left: -20px;
+    box-shadow: none;
+    padding: 0;
+          display: none;
+}
+ 
+
+/* Container */
+/* ========================================================================== */
+
+
+
+#container {
+    padding-top: 20px;
+    color: #555;
+    width: 960px;
+    margin: auto;
+    min-height: 240px;
+}
+
+/*
+ * this is basically used to force specific elements not to use
+ * grid_* classes
+ */
+#container .page_title, #container .content, #container .sidebar {
+    display: inline;
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#container .content, #container .page_title {
+    width: 940px;
+}
+#container.two_columns .content {
+    width: 700px;
+}
+#container.two_columns .content.without_sidebar {
+    width: 940px;
+}
+#container.two_columns .sidebar {
+    width: 220px;
+}
+
+/* Content specs */
+/* ========================================================================== */
+
+/*
+ * -> Subtle boxes
+ */
+
+.subtle_box {
+    margin: 0 0 20px;
+    padding: 9px;
+    background: #fff;
+    border: 1px solid #d3d7cf;
+    border-color: rgba(0,0,0,0.15);
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -moz-box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+}
+
+
+.subtle_greybox {
+    margin: 0 0 20px;
+    padding: 9px;
+    background: #f6f6f6;
+    border: 1px solid #d3d7cf;
+    border-color: rgba(0,0,0,0.15);
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -moz-box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+}
+/* -> Definition Lists */
+
+dl dt {
+    font-weight: 700;
+}
+dl dt a {
+    color: inherit;
+}
+dl dt a:visited {
+    color: #ef8e4f;
+}
+
+/* Footer */
+/* ========================================================================== */
+
+
+
+#footer {
+    clear: left;
+    /*background: #d3d7cf url(images/grass.png) top center repeat-x;*/
+    background: #d3d7cf;
+    color: #555753;
+    padding: 20px 0;
+}
+#footer div.links div {
+    float: left;
+    margin-right: 20px;
+}
+#footer div.links.right div {
+    float: right;
+    text-align: right;
+}
+#footer div.links div a, #footer div.links div strong {
+    display: block;
+    text-decoration: none;
+}
+#footer div.links div a:hover, #footer div.links div a:focus {
+    text-decoration: underline;
+}
+#footer ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+#footer ul li {
+    margin: 0;
+    padding: 0;
+}
+#footer ul.menu > li > a {
+    font-weight: bold;
+}
+#footer a {
+    color: inherit;
+    -webkit-transition: background-color 100ms ease-in;
+}
+#footer a:focus {
+   background: #ececec;
+   padding: 1px 3px;
+   margin: -1px -3px;
+   text-decoration: none !important;
+   outline: 0;
+   -moz-border-radius: 5px;
+   -webkit-border-radius: 5px;
+   border-radius: 5px;
+}
+#footer #footnotes {
+    margin-top: 20px;
+}
+#footer #footnotes small {
+    font-size: 80%;
+}
+/* Footer Grass */
+/* ========================================================================== */
+#footer-grass {
+  background: url("./images/grass.png") repeat-x scroll center top transparent;
+  height: 39px;
+  margin-top: -33px;
+}
+
+#footer-art {
+  margin-left: auto;
+  margin-right: auto;
+  clear: left;
+  height: 180px;
+  margin-top: 0;
+  width: 940px;
+  background-image: url("./images/community.png");
+}
+
+
+
+
+div.notify {
+  font-weight: bold;
+  padding: 2px 2px 2px 45px ;
+    margin-top: 30px;
+    -moz-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3), inset 0 1px 2px #fff;
+    -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3), inset 0 1px 2px #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3), inset 0 1px 2px #fff;
+}
+
+#tb {
+  margin: 1em 3em 0 3em;
+  text-align: justify;
+}
+
+div.dokuwiki .bchead {
+  font-size: 13px;
+  font-weight: bold;
+}

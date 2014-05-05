@@ -1,0 +1,140 @@
+@import url("fonts.css");
+
+/* Main Elements */
+/* ========================================================================== */
+
+
+body {
+    font-family: 'Cantarell', 'Droid Sans', 'DejaVu Sans', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    font-size: 14px;
+    line-height: 1.7em;
+    color: #2e3436;
+}
+
+body.win {
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #2e3436;
+}
+
+body.win h1, body.win h2, body.win h3, body.win h4, body.win h5, body.win h6 {
+    font-family: "Trebuchet MS";
+}
+
+hr {
+    border: 0 #ccc solid;
+    border-top-width: 1px;
+    clear: both;
+    height: 0;
+    margin: 30px 0;
+}
+
+hr.top_shadow,
+hr.bottom_shadow {
+    height: 25px;
+    background: url(../images/hr-shadow.png) no-repeat bottom;
+    background-size: contain;
+    border: 0;
+}
+hr.bottom_shadow {
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+h1, h2, h3, h4, h5, h6, dt {
+    font-family: 'Cantarell', 'Droid Serif', 'DejaVu Serif', Cambria, Georgia, serif;
+    color: #3465a4;
+    font-weight: 500;
+    line-height: normal;
+    color: #0489B7;
+}
+h1 {
+    font-size: 42px;
+}
+h2 {
+    font-size: 25px;
+}
+h3, dt {
+    font-size: 21px;
+    margin: 0.4em 0 0.5em;
+}
+dt {
+    color: #E36615;
+}
+dt a:hover {
+    color: #fa7721;    
+}
+h4 {
+    font-size: 19px;
+}
+h5 {
+    font-size: 17px;
+}
+h6 {
+    font-size: 15px;
+}
+ol {
+    list-style:decimal;
+}
+ul {
+    list-style:square;
+}
+li {
+    margin-left:30px;
+}
+dl,dt,h1,h2,h3,h4,h5,h6,pre,table,address,fieldset {
+    margin: 0.8em 0 0.4em;
+}
+p, dd, .action_box, ul, ol {
+    margin: 0.4em 0 0.5em;
+}
+
+
+/* Text classes */
+/* ========================================================================== */
+
+.highlight {
+    background: yellow;
+}
+
+.main_feature {
+    font-size: 18pt;
+    font-family: 'Cantarell', 'Droid Serif', 'DejaVu Serif', Cambria, Georgia, serif;
+    line-height: 130%;  
+}
+
+.main_header {
+    font-size: 14pt;
+    font-family: 'Cantarell', 'Droid Serif', 'DejaVu Serif', Cambria, Georgia, serif;
+    line-height: 130%;  
+}
+
+.main_event {
+    font-size: 10pt;
+    font-family: 'Cantarell', 'Droid Serif', 'DejaVu Serif', Cambria, Georgia, serif;
+    line-height: 130%;  
+}
+
+.footnotes {
+    font-size: 11px;
+    color: #888a85;
+}
+.footnotes a {
+    color: #888a85;
+}
+
+#footer {
+    font-size: 11px;
+    line-height: 1.5em;
+}
+
+#event {
+  margin-left: 20px;
+}
+
+#map {
+  margin-top: 25px;
+  margin-left: 20px;
+}
