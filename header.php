@@ -27,7 +27,17 @@ if (!defined('DOKU_INC')) die();
 	<div id="header" class="container_12">
 
 		<div id="logo" class="grid_3">
-			<a title="Αρχική σελίδα" href="http://wiki.gnome.gr"><img src="http://gnome.gr/wp-content/themes/gnome-grass/images/gnome-logo.png" alt="GNOME: The Free Software Desktop Project" /></a>
+			<?php
+            // get logo either out of the template images folder or data/media folder
+            $logoSize = array();
+            $logo = tpl_getMediaFile(array(':wiki:logo.png', ':logo.png', 'images/logo.png'), false, $logoSize);
+
+            // display logo and wiki title in a link to the home page
+            tpl_link(
+                wl(),
+                '<img src="'.$logo.'" '.$logoSize[3].' alt="" />', 'accesskey="h" title="[H]"'
+            );
+        ?>
 		</div>
 <?php if ($conf['useacl']): ?>
 		<div id="top_bar" class="grid_9">
